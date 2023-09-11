@@ -86,7 +86,9 @@ h1,h2,h3, h4 {
 
 body
 {
-    background-color: #04043c;
+    background: url("../svg/layered-waves-haikei.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -199,7 +201,3 @@ span {
         background-position: 0 0;
     }
 }
-
-
-
-
