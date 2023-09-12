@@ -206,3 +206,8 @@ span {
         background-position: 0 0;
     }
 }
+
+a
+{
+    text-decoration: none;
+}
