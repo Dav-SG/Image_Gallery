@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
-:root {
-    --fuenteHeading: 'PT Sans', sans-serif;
-    --fuenteParrafos: 'Open Sans', sans-serif;
-
-    --primario: #784D3C;
-    --gris: #e1e1e1;
-    --blanco: #FFFFFF;
-    --negro: #000000;
-}
 
 html {
     box-sizing: border-box; /* Esto hace que el border y el padding no afecten el ancho de nuestros elementos */
@@ -18,13 +9,6 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
-/*body {
-    font-family: var(--fuenteParrafos);
-    font-size: 1.6rem;
-    line-height: 2; !* Interlineado *!
-}*/
-
 
 svg {
 	/* font-family: "Russo One", sans-serif; */
@@ -47,7 +31,7 @@ svg text {
 }
 
 /* Fondo del texto "Galeria de Imagenes" Fondo blanco */
-.wrapper {background-color: #04043c};
+.wrapper {background-color: #04043c;}
 /* Fondo del texto "Galeria de Imagenes" Fondo blanco */
 
 .clase_prueba{
@@ -57,7 +41,7 @@ svg text {
 
     /* Alinea los headers tipo 1 y 3 al centro de la pagina */
     h1, h3 {text-align: center;}
-     h4 {font-family:  Helvetica} 
+     h4 {font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
     /* Boton del menu desplegable */
 
 
@@ -73,7 +57,7 @@ svg text {
     position: absolute;
     background-color: #162146;
     min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -107,7 +91,7 @@ svg text {
 }
 
 h1,h2,h3, h4 {
-    text-align: l;
+    text-align: center;
     color: whitesmoke;
 }
 
@@ -119,7 +103,7 @@ body
 html
 {
     height: 100%;
-    margin: 0%;
+    margin: 0;
 }
 
 section {
@@ -193,7 +177,6 @@ span {
     background-color: #314a9b;
     cursor: pointer;
     border: none;
-    padding: none;
     padding: 16px 32px;
     color: azure;
     font-size: 24px;
@@ -205,8 +188,8 @@ span {
 .dropbtn::before{/*Button estilo*/
     content: "";
     position: absolute;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     z-index: -1;
     width: 100%;
     height: 100%;
@@ -247,4 +230,19 @@ a
     padding: 2rem;
     width: min(90%, 120rem);
     margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.infoArtista{
+    background-color: #000;
+    border-radius: 5%;
+    padding: 2.5rem;
+    max-height: 470px;
+}
+
+.infoArtista h1{
+    font-size: 3.5rem;
+}
+
+.infoArtista h3, h4{
+    font-size: 1.7rem;
 }
