@@ -211,3 +211,13 @@ a
 {
     text-decoration: none;
 }
+
+.divCentrado {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 50px;
+}
+
+.divPrincipal{
+
+}
