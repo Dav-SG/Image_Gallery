@@ -134,17 +134,29 @@ body
 }
 
 .dark-mode{
-    &svg text{
-        stroke: white;
-    }
+    /*&svg text{*/
+    /*    stroke: white;*/
+    /*}*/
     background-image: url(../svg/layered-waves-haikei.svg);
     /* Fondo del texto "Galeria de Imagenes" Fondo blanco */
-    .wrapper {background-color: #04043c;}
-    /* Fondo del texto "Galeria de Imagenes" Fondo blanco */
-    .dark-mode-boton{
-        filter: invert(100%);
-    }
+    /*.wrapper {background-color: #04043c;}*/
+    /*!* Fondo del texto "Galeria de Imagenes" Fondo blanco *!*/
+    /*.dark-mode-boton{*/
+    /*    filter: invert(100%);*/
+    /*}*/
 
+}
+
+.dark-mode svg text{
+    stroke: white;
+}
+
+.dark-mode .wrapper{
+    background-color: #04043c;;
+}
+
+.dark-mode .dark-mode-boton{
+    filter: invert(100%);
 }
 
 html
