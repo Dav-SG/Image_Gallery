@@ -19,7 +19,7 @@ svg {
 svg text {
 	animation: stroke 5s infinite alternate;
 	stroke-width: 2;
-	stroke: white;
+	stroke: black;
 	font-size: 40px;
 }
 
@@ -30,9 +30,7 @@ svg text {
 	100% {fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0); stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;}
 }
 
-/* Fondo del texto "Galeria de Imagenes" Fondo blanco */
-.wrapper {background-color: #04043c;}
-/* Fondo del texto "Galeria de Imagenes" Fondo blanco */
+
 
 .clase_prueba{
  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -87,12 +85,23 @@ svg text {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
     text-align: center;
+    align-items: center;
+    padding: 0 0;
 }
 
+.dark-mode-boton{
+    max-width: 50px;
+    max-height: 50px;
+    margin-bottom: 2rem;
+}
 
+.dark-mode-boton:hover{
+    cursor: pointer;
+}
 
 @media (min-width: 768px) {
     svg text{
@@ -100,7 +109,9 @@ svg text {
     }
 
     .container {
-        display: block;
+        flex-direction: row;
+        justify-content: center;
+        max-height: 100px;
     }
 }
 
@@ -111,8 +122,21 @@ h1,h2,h3, h4 {
 
 body
 {
-    background-color: #04043c;
+    background-image: url(../imagenes/cielo-colorido-nubes-puesta-sol.jpg);
+}
+
+.dark-mode{
+    &svg text{
+        stroke: white;
+    }
     background-image: url(../svg/layered-waves-haikei.svg);
+    /* Fondo del texto "Galeria de Imagenes" Fondo blanco */
+    .wrapper {background-color: #04043c;}
+    /* Fondo del texto "Galeria de Imagenes" Fondo blanco */
+    .dark-mode-boton{
+        filter: invert(100%);
+    }
+
 }
 
 html
@@ -153,10 +177,6 @@ img {
 @media (min-width: 992px) {
     svg text{
         font-size: 100px;
-    }
-
-    .container {
-        display: block;
     }
 
     img{
@@ -256,6 +276,14 @@ a
     text-decoration: none;
 }
 
+
+.divPrincipal{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 @media (min-width: 768px) {
     .divPrincipal {
         margin-top: 2rem;
@@ -274,11 +302,6 @@ a
     }
 }
 
-.divPrincipal{
-    margin-top: 2rem;
-    display: grid;
-    gap: 2rem;
-}
 
 .contenedor {
     padding: 2rem;
