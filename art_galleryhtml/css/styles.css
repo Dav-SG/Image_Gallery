@@ -338,7 +338,7 @@ a
     max-width: 350px;
     width: 100%;
     height: auto;
-    background: var(--blanco);
+    background:  rgba(12, 164, 191, 0.216); 
     padding: 60px 45px;
     position: absolute;
     top: 50%;
