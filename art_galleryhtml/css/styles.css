@@ -21,7 +21,8 @@ html {
 svg {
 	/* font-family: "Russo One", sans-serif; */
     font-family: "Dancing Script", sans-serif;
-	width: 100%; height: 100%;
+	width: 100%;
+    height: 100%;
 }
 
 svg text {
@@ -47,7 +48,7 @@ svg text {
 
     /* Alinea los headers tipo 1 y 3 al centro de la pagina */
     h1, h3 {text-align: center;}
-     h4 {font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+     h4 {font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
     /* Boton del menu desplegable */
 
 
