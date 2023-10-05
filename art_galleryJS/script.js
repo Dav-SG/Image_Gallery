@@ -43,7 +43,7 @@ textElement.textContent = "LE PETIT LOUVRE";
 textElement.style.animation = "stroke 5s infinite alternate";
 textElement.style.strokeWidth = "1";
 textElement.style.stroke = "black";
-textElement.style.fontSize = "60px";
+textElement.style.fontSize = "100px";
 
 // Append the text element to the SVG element
 svgElement.appendChild(textElement);
