@@ -26,10 +26,45 @@ const divContainer = document.createElement('div');
 divWrapper.className ='wrapper';
 header.appendChild(divWrapper);
 
-const svgElement = document.createElement('svg');
-svgElement.innerHTML = `
-  <text x="50%" y="50%" dy=".35em" text-anchor="middle">LE PETIT LOUVRE</text>
+// Crea el elemento SVG
+const svgElement = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+svgElement.setAttribute("width", "100%");
+svgElement.setAttribute("height", "100%");
+
+// Create a text element
+const textElement = document.createElementNS("http://www.w3.org/2000/svg", "text");
+textElement.setAttribute("x", "50%");
+textElement.setAttribute("y", "50%");
+textElement.setAttribute("dy", ".35em");
+textElement.setAttribute("text-anchor", "middle");
+textElement.textContent = "LE PETIT LOUVRE";
+
+// Apply animation to the text element
+textElement.style.animation = "stroke 5s infinite alternate";
+textElement.style.strokeWidth = "1";
+textElement.style.stroke = "black";
+textElement.style.fontSize = "60px";
+
+// Append the text element to the SVG element
+svgElement.appendChild(textElement);
+
+// Append the SVG element to the document
+document.body.appendChild(svgElement);
+
+// Define the keyframes animation dynamically
+const style = document.createElement("style");
+style.textContent = `
+  @keyframes stroke {
+	0%   {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;}
+	70%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); }
+	80%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3;}
+	100% {fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0); stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;}
+  }
 `;
+
+// Append the style to the document head
+document.head.appendChild(style);
+
 
 const h1Element = document.createElement('h1');
 h1Element.textContent = 'Art Gallery///Galeria De Arte';
@@ -298,20 +333,6 @@ document.addEventListener('DOMContentLoaded', function (){
         font-family: "Dancing Script", sans-serif;
         width: 100%; 
         height: 100%;
-    }
-    
-    svg text {
-        animation: stroke 5s infinite alternate;
-        stroke-width: 2;
-        stroke: black;
-        font-size: 40px;
-    }
-    
-    @keyframes stroke {
-        0%   {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;}
-        70%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); }
-        80%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3;}
-        100% {fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0); stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;}
     }
     
     /* Alinea los headers tipo 1 y 3 al centro de la pagina */
