@@ -149,15 +149,6 @@ main.appendChild(h1Main);
 main.appendChild(divPrincipal);
 
 //Contenedor divPrincipal
-const linksArtistas = ['Claude_Monet.html', 'Georges_Braque.html', 'Georges-Pierre_Seurat.html', 'Hirohiko_Araki.html',
-'Katsushika_Hokusai.html', 'Junji_Ito.html', 'Leonardo_da_Vinci.html', 'Michelangelo_Buonarroti.html',
-'Donato_di_Niccolo_di_Betto_Bardi.html'];
-
-const linksImagenes = ['./imagenes/monet-paintings-woman-with-a-parasol-1875.jpg', './imagenes/brake_violin_jarra.jpg',
-    './imagenes/seurat-tarde-domingo-isla-jatte.jpg', './imagenes/Giorno-in-Spring.webp', './imagenes/il_570xN.5005281454_o1oq.webp',
-    './imagenes/Marvin_2022_Uzumaki-Junji-Ito.webp', './imagenes/mona-lisa-0.webp', './imagenes/CreacionDeAdan.webp',
-    './imagenes/magdalena_penitente.jpg'];
-
 const foto1 = document.createElement('div');
 const foto2 = document.createElement('div');
 const foto3 = document.createElement('div');
