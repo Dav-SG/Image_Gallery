@@ -153,6 +153,11 @@ const linksArtistas = ['Claude_Monet.html', 'Georges_Braque.html', 'Georges-Pier
 'Katsushika_Hokusai.html', 'Junji_Ito.html', 'Leonardo_da_Vinci.html', 'Michelangelo_Buonarroti.html',
 'Donato_di_Niccolo_di_Betto_Bardi.html'];
 
+const linksImagenes = ['./imagenes/monet-paintings-woman-with-a-parasol-1875.jpg', './imagenes/brake_violin_jarra.jpg',
+    './imagenes/seurat-tarde-domingo-isla-jatte.jpg', './imagenes/Giorno-in-Spring.webp', './imagenes/il_570xN.5005281454_o1oq.webp',
+    './imagenes/Marvin_2022_Uzumaki-Junji-Ito.webp', './imagenes/mona-lisa-0.webp', './imagenes/CreacionDeAdan.webp',
+    './imagenes/magdalena_penitente.jpg'];
+
 const foto1 = document.createElement('div');
 const foto2 = document.createElement('div');
 const foto3 = document.createElement('div');
@@ -166,27 +171,116 @@ const foto9 = document.createElement('div');
 const fotos = [foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9];
 let aux = 0;
 
+const objeto1 = {
+    linkArtista: 'Claude_Monet.html',
+    linkImagen: './imagenes/monet-paintings-woman-with-a-parasol-1875.jpg',
+    descripcion: {
+        h1: 'Woman with a Parasol - Madame Monet and Her Son',
+        p: 'La pintura representa a la esposa de Monet, Camille Doncieux, y a su hijo Jean Monet, ' +
+            'caminando en un campo abierto bajo el sol brillante.'
+    }
+};
+
+const objeto2 = {
+    linkArtista: 'Georges_Braque.html',
+    linkImagen: './imagenes/brake_violin_jarra.jpg',
+    descripcion: {
+        h1: 'Brake Violin and Pitcher',
+        p: 'Braque descompone y fragmenta la imagen de un violín y una jarra en una serie de formas geométricas interconectadas.'
+    }
+};
+
+const objeto3 = {
+    linkArtista: 'Georges-Pierre_Seurat.html',
+    linkImagen: './imagenes/seurat-tarde-domingo-isla-jatte.jpg',
+    descripcion: {
+        h1: 'A Sunday Afternoon on the Island of La Grande Jatte',
+        p: 'La pintura representa una escena de la vida parisina en un parque en la isla de la Grande Jatte en el río Sena.'
+    }
+};
+
+const objeto4 = {
+    linkArtista: 'Hirohiko_Araki.html',
+    linkImagen: './imagenes/Giorno-in-Spring.webp',
+    descripcion: {
+        h1: 'Giorno in Spring',
+        p: 'Giorno Giovanna es un personaje ficticio de la serie de manga japonesa JoJo\'s Bizarre Adventure, escrita e ilustrada por Hirohiko Araki'
+    }
+};
+
+const objeto5 = {
+    linkArtista: 'Katsushika_Hokusai.html',
+    linkImagen: './imagenes/il_570xN.5005281454_o1oq.webp',
+    descripcion: {
+        h1: 'La Gran Ola de Kanagawa',
+        p: 'Contiene una frescura y una expresión de síntesis que en occidente solo fue posible ' +
+            'realizar hasta el siglo XX, y además bajo la influencia de este modelo oriental.'
+    }
+};
+
+const objeto6 = {
+    linkArtista: 'Junji_Ito.html',
+    linkImagen: './imagenes/Marvin_2022_Uzumaki-Junji-Ito.webp',
+    descripcion: {
+        h1: 'Uzumaki (manga)',
+        p: 'Uzumaki es un manga de horror seinen escrito e ilustrado por Junji Ito.'
+    }
+};
+
+const objeto7 = {
+    linkArtista: 'Leonardo_da_Vinci.html',
+    linkImagen: './imagenes/mona-lisa-0.webp',
+    descripcion: {
+        h1: 'Mona Lisa',
+        p: 'La Mona Lisa, es una obra del Renacimiento pintada por artista multifacético Leonardo ' +
+            'da Vinci. El cuadro es uno de los más importantes símbolos de la cultura occidental.'
+    }
+};
+
+const objeto8 = {
+    linkArtista: 'Michelangelo_Buonarroti.html',
+    linkImagen: './imagenes/CreacionDeAdan.webp',
+    descripcion: {
+        h1: 'La Creación de Adán',
+        p: 'La creación de Adán, Ilustra uno de los nueve episodios del Génesis en el cual Dios le da vida a Adán, el primer hombre.'
+    }
+};
+
+const objeto9 = {
+    linkArtista: 'Donato_di_Niccolo_di_Betto_Bardi.html',
+    linkImagen: './imagenes/magdalena_penitente.jpg',
+    descripcion: {
+        h1: 'María Magdalena Penitente',
+        p: 'La Magdalena penitente es una escultura de madera de María Magdalena realizada por el ' +
+            'escultor renacentista italiano Donatello, la pieza fue recibida con asombro por su realismo sin precedentes.'
+    }
+};
+
+const objetos = [objeto1, objeto2, objeto3, objeto4, objeto5, objeto6, objeto7, objeto8, objeto9];
+
 for(let foto of fotos){
     foto.className = 'foto';
     const anchor = document.createElement('a');
-    anchor.className = 'foto' + (aux + 1);
     const divDesc = document.createElement('div');
     divDesc.className = 'descripcion';
-    anchor.href = linksArtistas[aux];
+    anchor.href = objetos[aux].linkArtista;
+    const img = document.createElement('img');
+    img.src = objetos[aux].linkImagen;
+    img.alt = 'Obra del Artista';
+    img.width = 250;
+    img.height = 250;
+    anchor.appendChild(img);
     foto.appendChild(anchor);
     foto.appendChild(divDesc);
+    const h1Desc = document.createElement('h1');
+    const pDesc = document.createElement('p');
+    h1Desc.textContent = objetos[aux].descripcion.h1;
+    pDesc.textContent = objetos[aux].descripcion.p;
+    divDesc.appendChild(h1Desc);
+    divDesc.appendChild(pDesc);
+    divPrincipal.appendChild(foto);
 
     if(aux < 9){
         aux++;
     }
-
-    divPrincipal.appendChild(foto);
 }
-
-const enlace1 = document.querySelector('.foto1');
-const img1 = document.createElement('img');
-img1.src = './imagenes/monet-paintings-woman-with-a-parasol-1875.jpg';
-img1.alt = 'Obra del Artista';
-img1.width = 250;
-img1.height = 250;
-enlace1.appendChild(img1);
