@@ -24,34 +24,34 @@ divWrapper.className ='wrapper';
 header.appendChild(divWrapper);
 
 // Crear un elemento de SVG
-const svgElement = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-svgElement.setAttribute("width", "100%");
-svgElement.setAttribute("height", "100%");
+const svgPetitLouvre = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+svgPetitLouvre.setAttribute("width","100%");
+svgPetitLouvre.setAttribute("height","100%");
 
 // Crear un elemento de texto en el SVG
-const textElement = document.createElementNS("http://www.w3.org/2000/svg", "text");
-textElement.setAttribute("x", "50%");
-textElement.setAttribute("y", "50%");
-textElement.setAttribute("dy", ".35em");
-textElement.setAttribute("text-anchor", "middle");
-textElement.textContent = "LE PETIT LOUVRE";
+const petitLouvre = document.createElementNS("http://www.w3.org/2000/svg", "text");
+petitLouvre.setAttribute("x","50%");
+petitLouvre.setAttribute("y","50%");
+petitLouvre.setAttribute("dy",".35em");
+petitLouvre.setAttribute("text-anchor", "middle");
+petitLouvre.textContent = "LE PETIT LOUVRE";
 
-// Aplicar estilos de animación al texto
-textElement.style.animation = "stroke 5s infinite alternate";
-textElement.style.strokeWidth = "1";
-textElement.style.stroke = "black";
-textElement.style.fontSize = "80px";
+// Aplicar estilos de animación al text
+petitLouvre.style.animation = "stroke 5s infinite alternate";
+petitLouvre.style.strokeWidth = "1";
+petitLouvre.style.stroke = "black";
+petitLouvre.style.fontSize = "80px";
 
-// Agregar un evento de clic al texto para redirigir a index.html
-textElement.addEventListener("click", function() {
+// Agregar un evento de clic al texto para redirigir al index
+petitLouvre.addEventListener("click", function() {
     window.location.href = "index.html";
 });
 
 // Agregar el texto al elemento SVG
-svgElement.appendChild(textElement);
+svgPetitLouvre.appendChild(petitLouvre);
 
 // Agregar el elemento SVG al documento
-document.body.appendChild(svgElement);
+document.body.appendChild(svgPetitLouvre);
 
 // Define las keyframes de la animación dinámicamente
 const style = document.createElement("style");
@@ -73,8 +73,8 @@ const h1Element = document.createElement('h1');
 //Se le asigna el contenido del texto del h1
 h1Element.textContent = 'Art Gallery///Galeria De Arte';
 
-//Se añanden los elementos svgElement y h1Element al divWrapper
-divWrapper.appendChild(svgElement);
+//Se añanden los elementos svgPetitLouvre y h1Element al divWrapper
+divWrapper.appendChild(svgPetitLouvre);
 divWrapper.appendChild(h1Element);
 
 //Se añade el div "container" al header
