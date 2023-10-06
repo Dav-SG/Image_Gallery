@@ -125,12 +125,33 @@ const artistaAraki = {
         p: 'Hirohiko Araki es un renombrado mangaka japonés, principalmente reconocido por su icónica serie de manga "JoJo\'s Bizarre Adventure".'
     }
 }
+
+const artistaHokusai = {
+    linkArtista: 'Katsushika_Hokusai',
+    linkImagen: './imagenes/katsushika.jpg',
+    descripcion: {
+        h1: 'Katsushika Hokusai',
+        p: 'Hokusai fue un maestro del género ukiyo-e y produjo una gran cantidad de obras a lo largo de su vida, abarcando temas que van desde retratos, paisajes y escenas cotidianas.'
+    }
+}
+
+const artistaIto = {
+    linkArtista: 'Junji_Ito',
+    linkImagen: './imagenes/junji.webp',
+    descripcion: {
+        h1: 'Junji Ito',
+        p: 'Junji Ito es conocido por su capacidad para crear historias de terror extremadamente perturbadoras.'
+    }
+}
+
+
+
 const artistaclaude = {
     linkArtista: 'claude_Monet.html',
     linkImagen: './imagenes/monet.jpg',
     descripcion: {
         h1: 'Claude Monet',
-        p: 'Hirohiko Araki es un renombrado mangaka japonés, principalmente reconocido por su icónica serie de manga "JoJo\'s Bizarre Adventure".'
+        p: 'Claude Monet influyente pintor francés del siglo XIX y principios del siglo XX".'
     }
 }
 const artistaGeorges = {
@@ -163,6 +184,16 @@ const artistaDonato = {
     descripcion: {
         h1: 'Donato di Niccolò di Betto Bardi',
         p: 'Donatello es uno de los escultores más influyentes del Renacimiento italiano y desempeñó un papel fundamental en la evolución de la escultura renacentista.'
+    }
+}
+    const artistaGeorge = {
+    linkArtista: 'Jorge_Pierre.html',
+    linkImagen: './imagenes/Georges_Seurat.jpg',
+    descripcion: {
+        h1: 'Georges-Pierre Seurat',
+        p: 'Georges Seurat es un pintor francés conocido por ser exponente'+
+        'del movimiento artístico conocido como neoimpresionismo, es su obra'+
+        'maestra "Un domingo en la tarde en la isla de la Grande Jatte'
     }
 }
 //Finaliza divPrincipal

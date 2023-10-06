@@ -114,7 +114,7 @@ link1.appendChild(btn1);
 const dropdownContent1 = document.createElement('div');
 dropdownContent1.className = 'dropdown-content';
 //Se declara un array que contiene los enlaces a los artistas franceses
-const linksDp1 = ['Claude_Monet.html', 'Georges_Braque.html', 'Georges-Pierre_Seurat.html'];
+const linksDp1 = ['Claude_Monet.html', 'Georges_Braque.html', 'Jorge_Pierre.html'];
 
 /**
  * For que itera el array de enlaces el cual crea elementos anchor le asigna un link del array de enlaces,
