@@ -1,4 +1,12 @@
+/**
+ * Funcion que espera como parametro un array de objetos el cual contiene la info de las fotos e itera sobre el array
+ * de "divs" de fotos creado anteriormente
+ * @param objetos
+ */
+
 function fotosExposicion(objetos){
+    let aux = 0;
+
     for(let foto of fotos){
         foto.className = 'foto';
         const anchor = document.createElement('a');
@@ -27,6 +35,10 @@ function fotosExposicion(objetos){
     }
 }
 
+/**
+ * Función de modo oscuro que determina que modo prefiere el usuario de manera automática de acuerdo a la config
+ * de su equipo, pero además permite activarlo o desactivarlo manualmente gracias al botón dark-mode
+ */
 document.addEventListener('DOMContentLoaded', function (){
 
     darkMode();

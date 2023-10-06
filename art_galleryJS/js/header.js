@@ -1,16 +1,21 @@
+//Se crean elementos del html
 const body = document.body;
 const header = document.createElement('header');
 const divContenedor = document.createElement('div');
 const main = document.createElement('main');
 
+//Se le asigna la clase "contenedor" al divContenedor
 divContenedor.className = 'contenedor';
 
+//Se añade al body del html los elementos header, divContenedor
 body.appendChild(header);
 body.appendChild(divContenedor);
+
+//Se le añade al divContenedor el main en el html
 divContenedor.appendChild(main);
 
 // Inicia header
-// const header = document.querySelector('header');
+//Se crean dos divs
 const divWrapper = document.createElement('div');
 const divContainer = document.createElement('div');
 
@@ -62,9 +67,13 @@ style.textContent = `
 // Agregar los estilos al encabezado del documento
 document.head.appendChild(style);
 
+//Se crea el elemento h1 del header
 const h1Element = document.createElement('h1');
+
+//Se le asigna el contenido del texto del h1
 h1Element.textContent = 'Art Gallery///Galeria De Arte';
 
+//Se añanden los elementos svgElement y h1Element al divWrapper
 divWrapper.appendChild(svgElement);
 divWrapper.appendChild(h1Element);
 
@@ -78,26 +87,40 @@ imgHeader.src = './svg/dark-mode.svg';
 imgHeader.alt = 'icono dark mode';
 imgHeader.className = 'dark-mode-boton';
 
+//Se crean cuatro divs que serán los botones desplegables de la navbar
 const dropdown1 = document.createElement('div');
 const dropdown2 = document.createElement('div');
 const dropdown3 = document.createElement('div');
 const dropdown4 = document.createElement('div');
 
+//Se leas asigna la clase "dropdown"
 dropdown1.className = 'dropdown';
 dropdown2.className = 'dropdown';
 dropdown3.className = 'dropdown';
 dropdown4.className = 'dropdown';
 
+//Se declara la constante link1 que crea un elemento anchor de html y tendrá como hipervínculo a France.html
 const link1 = document.createElement('a');
 link1.href = 'France.html';
+
+//Se crea un elemento button y se le añade la clase "dropbtn" y el texto del botón se le asgigna "France"
 const btn1 = document.createElement('button');
 btn1.className = 'dropbtn';
 btn1.textContent = 'France';
+//Se le asigna btn1 a link1
 link1.appendChild(btn1);
 
+//Se crea un elemento div con clase 'dropdown-content'
 const dropdownContent1 = document.createElement('div');
 dropdownContent1.className = 'dropdown-content';
+//Se declara un array que contiene los enlaces a los artistas franceses
 const linksDp1 = ['Claude_Monet.html', 'Georges_Braque.html', 'Georges-Pierre_Seurat.html'];
+
+/**
+ * For que itera el array de enlaces el cual crea elementos anchor le asigna un link del array de enlaces,
+ * pero además le asigna el texto que mostrara en pantalla dicho anchor y después lo añade al div
+ * dropdownContent1
+ */
 
 linksDp1.forEach(link => {
     const anchor = document.createElement('a');
@@ -106,9 +129,11 @@ linksDp1.forEach(link => {
     dropdownContent1.appendChild(anchor);
 });
 
+//Se añaden los elementos link1 y dropdownContent1 al div dropdown1
 dropdown1.appendChild(link1);
 dropdown1.appendChild(dropdownContent1);
 
+//Se repite lo anterior dropdown2, 3 y 4
 const link2 = document.createElement('a');
 link2.href = 'Japan.html';
 const btn2 = document.createElement('button');
@@ -160,6 +185,7 @@ link4.appendChild(btn4);
 
 dropdown4.appendChild(link4);
 
+//Se le añaden los elementos imgHeader, dropdown1, 2, 3 y 4 al divContainer
 divContainer.appendChild(imgHeader);
 divContainer.appendChild(dropdown1);
 divContainer.appendChild(dropdown2);

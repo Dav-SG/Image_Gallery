@@ -1,16 +1,22 @@
 //Inicia Body
 //Inicia Main
 
+//Se declara el h1 y el divPrincipal del main
 const h1Main = document.createElement('h1');
 const divPrincipal = document.createElement('div');
 
+//Se asigna la clase "divPrincipal" a la constante
 divPrincipal.className = 'divPrincipal';
 
+//Se asigna el contenido del texto del h1
 h1Main.textContent = 'EXPOSICIÓN GENERAL';
+
+//Se añaden al html los elementos h1Main y divPrincipal
 main.appendChild(h1Main);
 main.appendChild(divPrincipal);
 
 //Contenedor divPrincipal
+//Se crean 9 divs que serán los contenedores de las fotos de la galería
 const foto1 = document.createElement('div');
 const foto2 = document.createElement('div');
 const foto3 = document.createElement('div');
@@ -21,9 +27,10 @@ const foto7 = document.createElement('div');
 const foto8 = document.createElement('div');
 const foto9 = document.createElement('div');
 
+//Se declara un array que contiene los 9 divs creados anteriormente
 const fotos = [foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9];
-let aux = 0;
 
+//Se declaran 9 objects que contienen la info de cada imagen
 const objeto1 = {
     linkArtista: 'Claude_Monet.html',
     linkImagen: './imagenes/monet-paintings-woman-with-a-parasol-1875.jpg',
