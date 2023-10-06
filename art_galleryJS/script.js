@@ -15,8 +15,6 @@ body.appendChild(header);
 body.appendChild(divContenedor);
 divContenedor.appendChild(main);
 
-
-
 // Inicia header
 // const header = document.querySelector('header');
 const divWrapper = document.createElement('div');
@@ -26,12 +24,12 @@ const divContainer = document.createElement('div');
 divWrapper.className ='wrapper';
 header.appendChild(divWrapper);
 
-// Crea el elemento SVG
+// Crear un elemento de SVG
 const svgElement = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 svgElement.setAttribute("width", "100%");
 svgElement.setAttribute("height", "100%");
 
-// Create a text element
+// Crear un elemento de texto en el SVG
 const textElement = document.createElementNS("http://www.w3.org/2000/svg", "text");
 textElement.setAttribute("x", "50%");
 textElement.setAttribute("y", "50%");
@@ -39,32 +37,31 @@ textElement.setAttribute("dy", ".35em");
 textElement.setAttribute("text-anchor", "middle");
 textElement.textContent = "LE PETIT LOUVRE";
 
-// Apply animation to the text element
+// Aplicar estilos de animación al texto
 textElement.style.animation = "stroke 5s infinite alternate";
 textElement.style.strokeWidth = "1";
 textElement.style.stroke = "black";
-textElement.style.fontSize = "100px";
+textElement.style.fontSize = "80px";
 
-// Append the text element to the SVG element
+// Agregar el texto al elemento SVG
 svgElement.appendChild(textElement);
 
-// Append the SVG element to the document
+// Agregar el elemento SVG al documento
 document.body.appendChild(svgElement);
 
-// Define the keyframes animation dynamically
+// Define las keyframes de la animación dinámicamente
 const style = document.createElement("style");
 style.textContent = `
   @keyframes stroke {
-	0%   {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;}
-	70%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); }
-	80%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3;}
-	100% {fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0); stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;}
+    0%   {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;}
+    70%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); }
+    80%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3;}
+    100% {fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0); stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;}
   }
 `;
 
-// Append the style to the document head
+// Agregar los estilos al encabezado del documento
 document.head.appendChild(style);
-
 
 const h1Element = document.createElement('h1');
 h1Element.textContent = 'Art Gallery///Galeria De Arte';
