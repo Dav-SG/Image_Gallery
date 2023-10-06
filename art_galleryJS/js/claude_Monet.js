@@ -17,7 +17,7 @@ h4ArtistaE2.textContent = 'Claude Monet fue un pintor francés'+
 'uno de los creadores del impresionismo'+
 'El término impresionismo deriva del título de su obra Impresión'+
 'sol naciente'+
-'​Sus primeras obras, hasta la mitad de la década de 1860'+
+'Sus primeras obras, hasta la mitad de la década de 1860'+
 'son de estilo realista. Monet logró exponer algunas en el Salón de París.';
 
 
@@ -29,5 +29,3 @@ infoArtista.appendChild(h4ArtistaE2);
 
 divPrincipal.appendChild(infoArtista);
 fotosExposicion(objetos);
-
-
