@@ -346,60 +346,59 @@ a
 }
 /*Formulario*/
 
-  
-  .formulario{
+
+.formulario{
     max-width: 350px;
     width: 100%;
     height: auto;
-    background:  rgba(12, 164, 191, 0.216); 
+    background:  rgba(12, 164, 191, 0.216);
     padding: 60px 45px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 20px;
-  }
-  
-  .formulario .title{
+}
+
+.formulario .title{
     margin-bottom: 20px;
     text-align: center;
     font-size: 26px;
     font-weight: bold;
-    color:var(--secundario);
-  }
-  
-  
-  .formulario .form .input_field{
+    color: var(--secundario);
+}
+
+
+.formulario .form .input_field{
     position: relative;
     margin-bottom: 10px;
-  }
-  
-  .formulario .form .input_field .input{
+}
+
+.formulario .form .input_field .input{
     width: 100%;
     padding: 12px;
     padding-left: 30px;
     border: none;
     background: #eeeeee;
-  }
-  
-  .formulario .form .btn{
+}
+
+.formulario .form .btn{
     width: 70%;
     margin: 20px auto 0;
     background: #3aaf9f;
     text-align: center;
     padding: 12px;
     border-radius: 25px;
-  }
-  
-  .formulario .form .btn a{
+}
+
+.formulario .form .btn a{
     color: #fff;
-  }
-  
-  .formulario .form .input_field i{
+}
+
+.formulario .form .input_field i{
     position: absolute;
     top: 10px;
     left: 10px;
     font-size: 14px;
     color: #1d2120;
-  }
-  
+}
