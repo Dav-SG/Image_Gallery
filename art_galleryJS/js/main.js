@@ -151,7 +151,7 @@ const artistaclaude = {
     linkImagen: './imagenes/monet.jpg',
     descripcion: {
         h1: 'Claude Monet',
-        p: 'Hirohiko Araki es un renombrado mangaka japonés, principalmente reconocido por su icónica serie de manga "JoJo\'s Bizarre Adventure".'
+        p: 'Claude Monet influyente pintor francés del siglo XIX y principios del siglo XX".'
     }
 }
 const artistaGeorges = {
