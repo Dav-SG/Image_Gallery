@@ -48,7 +48,6 @@ const boton = document.createElement('div');
 boton.className = 'btn';
 boton.appendChild(botonRegis);
 
-
 form.appendChild(nombreForm);
 form.appendChild(email);
 form.appendChild(password);
