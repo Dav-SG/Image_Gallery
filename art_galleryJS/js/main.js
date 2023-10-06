@@ -143,7 +143,7 @@ const artistaGeorges = {
 }
 const artistaLeonardo = {
     linkArtista: 'leonardo_da_vinci.html',
-    linkImagen: '.\imagenes\Leonardo.jpg',
+    linkImagen: './imagenes/Leonardo.jpg',
     descripcion: {
         h1: 'Leonardo Da Vinci',
         p: 'Leonardo da Vinci fue un destacado polímata renacentista italiano, lo que significa que fue una persona altamente talentosa y versátil en una variedad de campos".'
@@ -151,10 +151,18 @@ const artistaLeonardo = {
 }
 const artistaMichelangelo = {
     linkArtista: 'Michelangelo_Buonarroti.html',
-    linkImagen: '.&imagenes\MiguelAngel.JPG',
+    linkImagen: './imagenes/MiguelAngel.JPG',
     descripcion: {
         h1: 'Michelangelo Buonarroti',
-        p: 'Leonardo da Vinci fue un destacado polímata renacentista italiano, lo que significa que fue una persona altamente talentosa y versátil en una variedad de campos".'
+        p: 'Michelangelo fue uno de los artistas más influyentes y versátiles del Renacimiento italiano.'
+    }
+}
+const artistaDonato = {
+    linkArtista: 'Donato_di_Niccolo_di_Betto_Bardi.html',
+    linkImagen: './imagenes/donatello.JPG',
+    descripcion: {
+        h1: 'Donato di Niccolò di Betto Bardi',
+        p: 'Donatello es uno de los escultores más influyentes del Renacimiento italiano y desempeñó un papel fundamental en la evolución de la escultura renacentista.'
     }
 }
 //Finaliza divPrincipal
