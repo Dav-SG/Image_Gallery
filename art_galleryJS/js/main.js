@@ -125,5 +125,21 @@ const artistaAraki = {
         p: 'Hirohiko Araki es un renombrado mangaka japonés, principalmente reconocido por su icónica serie de manga "JoJo\'s Bizarre Adventure".'
     }
 }
+const artistaclaude = {
+    linkArtista: 'claude_Monet.html',
+    linkImagen: './imagenes/monet.jpg',
+    descripcion: {
+        h1: 'Claude Monet',
+        p: 'Hirohiko Araki es un renombrado mangaka japonés, principalmente reconocido por su icónica serie de manga "JoJo\'s Bizarre Adventure".'
+    }
+}
+const artistaGeorges = {
+    linkArtista: 'Georges_Braque.html',
+    linkImagen: './imagenes/Georges_Braque.jpg',
+    descripcion: {
+        h1: 'Georges Braque',
+        p: 'Georges Braque, influyente pintor francés, fue un pionero del cubismo en el arte, trabajando en estrecha colaboración con Pablo Picasso para transformar la forma de representar el mundo en el siglo XX.".'
+    }
+}
 //Finaliza divPrincipal
 //Finaliza Main
