@@ -141,5 +141,15 @@ const artistaGeorges = {
         p: 'Georges Braque, influyente pintor francés, fue un pionero del cubismo en el arte, trabajando en estrecha colaboración con Pablo Picasso para transformar la forma de representar el mundo en el siglo XX.".'
     }
 }
+const artistaGeorge = {
+    linkArtista: 'Jorge_Pierre.html',
+    linkImagen: './imagenes/Georges_Seurat.jpg',
+    descripcion: {
+        h1: 'Georges-Pierre Seurat',
+        p: 'Georges Seurat es un pintor francés conocido por ser exponente'+
+        'del movimiento artístico conocido como neoimpresionismo, es su obra'+
+        'maestra "Un domingo en la tarde en la isla de la Grande Jatte'
+    }
+}
 //Finaliza divPrincipal
 //Finaliza Main
