@@ -125,6 +125,27 @@ const artistaAraki = {
         p: 'Hirohiko Araki es un renombrado mangaka japonés, principalmente reconocido por su icónica serie de manga "JoJo\'s Bizarre Adventure".'
     }
 }
+
+const artistaHokusai = {
+    linkArtista: 'Katsushika_Hokusai',
+    linkImagen: './imagenes/katsushika.jpg',
+    descripcion: {
+        h1: 'Katsushika Hokusai',
+        p: 'Hokusai fue un maestro del género ukiyo-e y produjo una gran cantidad de obras a lo largo de su vida, abarcando temas que van desde retratos, paisajes y escenas cotidianas.'
+    }
+}
+
+const artistaIto = {
+    linkArtista: 'Junji_Ito',
+    linkImagen: './imagenes/junji.webp',
+    descripcion: {
+        h1: 'Junji Ito',
+        p: 'Junji Ito es conocido por su capacidad para crear historias de terror extremadamente perturbadoras.'
+    }
+}
+
+
+
 const artistaclaude = {
     linkArtista: 'claude_Monet.html',
     linkImagen: './imagenes/monet.jpg',
