@@ -187,7 +187,7 @@ const artistaDonato = {
     }
 }
     const artistaGeorge = {
-    linkArtista: 'Jorge_Pierre.html',
+    linkArtista: 'Georges-Pierre_Seurat.html',
     linkImagen: './imagenes/Georges_Seurat.jpg',
     descripcion: {
         h1: 'Georges-Pierre Seurat',
