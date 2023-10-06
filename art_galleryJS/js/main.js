@@ -115,5 +115,15 @@ const objeto9 = {
             'escultor renacentista italiano Donatello, la pieza fue recibida con asombro por su realismo sin precedentes.'
     }
 };
+
+//Artistas
+const artistaAraki = {
+    linkArtista: 'Hirohiko_Araki.html',
+    linkImagen: './imagenes/Araki.png',
+    descripcion: {
+        h1: 'Hirohiko Araki',
+        p: 'Hirohiko Araki es un renombrado mangaka japonés, principalmente reconocido por su icónica serie de manga "JoJo\'s Bizarre Adventure".'
+    }
+}
 //Finaliza divPrincipal
 //Finaliza Main
