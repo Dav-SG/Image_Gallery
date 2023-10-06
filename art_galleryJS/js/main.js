@@ -162,5 +162,21 @@ const artistaGeorges = {
         p: 'Georges Braque, influyente pintor francés, fue un pionero del cubismo en el arte, trabajando en estrecha colaboración con Pablo Picasso para transformar la forma de representar el mundo en el siglo XX.".'
     }
 }
+const artistaLeonardo = {
+    linkArtista: 'leonardo_da_vinci.html',
+    linkImagen: '.\imagenes\Leonardo.jpg',
+    descripcion: {
+        h1: 'Leonardo Da Vinci',
+        p: 'Leonardo da Vinci fue un destacado polímata renacentista italiano, lo que significa que fue una persona altamente talentosa y versátil en una variedad de campos".'
+    }
+}
+const artistaMichelangelo = {
+    linkArtista: 'Michelangelo_Buonarroti.html',
+    linkImagen: '.&imagenes\MiguelAngel.JPG',
+    descripcion: {
+        h1: 'Michelangelo Buonarroti',
+        p: 'Leonardo da Vinci fue un destacado polímata renacentista italiano, lo que significa que fue una persona altamente talentosa y versátil en una variedad de campos".'
+    }
+}
 //Finaliza divPrincipal
 //Finaliza Main
