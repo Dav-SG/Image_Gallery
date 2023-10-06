@@ -331,7 +331,7 @@ document.addEventListener('DOMContentLoaded', function (){
         background:  rgba(12, 164, 191, 0.216); 
         padding: 60px 45px;
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%,-50%);
         border-radius: 20px;
@@ -381,5 +381,7 @@ document.addEventListener('DOMContentLoaded', function (){
       }
       
     `;
+    
+
     document.head.appendChild(styles);
 });
