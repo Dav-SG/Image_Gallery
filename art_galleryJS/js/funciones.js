@@ -1,13 +1,12 @@
-/**
- * Funcion que espera como parametro un array de objetos el cual contiene la info de las fotos e itera sobre el array
- * de "divs" de fotos creado anteriormente
- * @param objetos
- */
+function mostrarImagen(imagen) {
+    // Lógica para mostrar la imagen en detalle
+    console.log('Mostrar imagen en detalle:', imagen);
+}
 
-function fotosExposicion(objetos){
+function fotosExposicion(objetos) {
     let aux = 0;
 
-    for(let foto of fotos){
+    for (let foto of fotos) {
         foto.className = 'foto';
         const anchor = document.createElement('a');
         const divDesc = document.createElement('div');
@@ -29,71 +28,95 @@ function fotosExposicion(objetos){
         divDesc.appendChild(pDesc);
         divPrincipal.appendChild(foto);
 
-        if(aux < 9){
+        if (aux < 9) {
             aux++;
         }
     }
 }
 
-/**
- * Función de modo oscuro que determina que modo prefiere el usuario de manera automática de acuerdo a la config
- * de su equipo, pero además permite activarlo o desactivarlo manualmente gracias al botón dark-mode
- */
-document.addEventListener('DOMContentLoaded', function (){
-
-    darkMode();
-    //agregando validación al formulario
-    const nombre = document.getElementById('name');
-    const correo = document.getElementById('correoEntrada');
-    const contra = document.getElementById('passwordEntrada');
-    const botonRegis = document.getElementById('boton-re');
-    const expresionesCorreo = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/; // Expresión regular para validar el correo electrónico
-
-//las expresiones regulares se guardan en la variable y se usara para la validación del correo
-
-
-    botonRegis.addEventListener("click", (event) =>{//se crea una función de flecha para el evento de click en el boton
-
-
-        if (nombre.value ===  null || nombre.value === ''){//aqui validamos el nombre no este vacio ni tenga datos nulos
-            alert('Ingresa un nombre correcto')
-        }
-        if(contra.value ===null || contra.value=== ''){//se valida la contraseña que no tenga datos nuloos o este vacio
-            alert('Ingresa una contraseña correcta')
-        }
-        if(!expresionesCorreo.test(correo.value)){//se verifica que el correo con la ayuda de las expresiones regulares que cada cadena de valores valida diferentes secciones en el correo
-            alert('ingresa un correo valido')
-        }
-        else{
-
-            alert('Registrado');
-        }
-    });
-});
-function darkMode(){
+function darkMode() {
     const prefiereDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
 
-    if(prefiereDarkMode.matches){
+    if (prefiereDarkMode.matches) {
         document.body.classList.add('dark-mode');
-    } else{
+    } else {
         document.body.classList.remove('dark-mode');
     }
 
-    prefiereDarkMode.addEventListener('change', function (){
-        if(prefiereDarkMode.matches){
+    prefiereDarkMode.addEventListener('change', function() {
+        if (prefiereDarkMode.matches) {
             document.body.classList.add('dark-mode');
-        } else{
+        } else {
             document.body.classList.remove('dark-mode');
         }
     });
 
     const botonDarkMode = document.querySelector('.dark-mode-boton');
 
-    botonDarkMode.addEventListener('click', function (){
+    botonDarkMode.addEventListener('click', function() {
         document.body.classList.toggle('dark-mode');
     });
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    darkMode();
+    // Agregando validación al formulario
+    const nombre = document.getElementById('name');
+    const correo = document.getElementById('correoEntrada');
+    const contra = document.getElementById('passwordEntrada');
+    const botonRegis = document.getElementById('boton-re');
+    const expresionesCorreo = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
+    botonRegis.addEventListener("click", (event) => {
+        if (nombre.value === null || nombre.value === '') {
+            alert('Ingresa un nombre correcto')
+        }
+        if (contra.value === null || contra.value === '') {
+            alert('Ingresa una contraseña correcta')
+        }
+        if (!expresionesCorreo.test(correo.value)) {
+            alert('Ingresa un correo válido')
+        } else {
+            alert('Registrado');
+        }
+    });
 
+    // Tu código para cargar fotos
+    const artistDetails = document.createElement('div');
+    artistDetails.className = 'artist-details';
 
+    const header = document.createElement('header');
+    header.className = 'header';
+
+    const h2Artist = document.createElement('h2');
+    h2Artist.textContent = ''; // Rellenar con el nombre del artista
+
+    const profileImage = document.createElement('img');
+    profileImage.className = 'profile-image';
+    profileImage.src = ''; // Rellenar con la URL de la imagen de perfil del artista
+    profileImage.alt = 'Profile Image';
+
+    const bioContainer = document.createElement('div');
+    bioContainer.className = 'bio-container';
+
+    const bioParagraph = document.createElement('p');
+    bioParagraph.textContent = ''; // Rellenar con la biografía del artista
+
+    bioContainer.appendChild(bioParagraph);
+
+    header.appendChild(h2Artist);
+    header.appendChild(profileImage);
+    header.appendChild(bioContainer);
+
+    artistDetails.appendChild(header);
+
+    const photoContainer = document.createElement('div');
+    photoContainer.className = 'photo-container';
+
+    // Simulación de fotos con objetos vacíos
+    const fotos = Array.from({ length: 10 }, (_, i) => ({ linkImagen: `imagen${i}.jpg`, descripcion: { h1: `Título ${i}`, p: `Descripción ${i}` }, linkArtista: `artista${i}.html` }));
+
+    fotosExposicion(fotos);
+
+    document.body.appendChild(artistDetails);
+});

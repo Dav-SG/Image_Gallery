@@ -551,6 +551,11 @@ document.addEventListener('DOMContentLoaded', function() {
             color: #333;
             margin: 0;
         }
+     .main-container {
+            max-width: 800px; /* Puedes ajustar el ancho máximo según tus preferencias */
+            margin: 0 auto; /* Estilo para centrar horizontalmente */
+        }
+        
     `;
 
     document.head.appendChild(styles);

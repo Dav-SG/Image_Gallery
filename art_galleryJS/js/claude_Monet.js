@@ -1,10 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
+    createArtistGallery();
+});
+
+function createArtistGallery() {
+    // Crear un contenedor principal
+    const mainContainer = document.createElement('div');
+    mainContainer.className = 'main-container'; // Agregar una nueva clase
+
     const artistDetails = document.createElement('div');
     artistDetails.className = 'artist-details';
 
     const header = document.createElement('header');
     header.className = 'header';
-
 
     const h2Artist = document.createElement('h2');
     h2Artist.textContent = ''; // Rellenar con el nombre del artista
@@ -53,6 +60,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 photoThumbnail.src = photo.urls.regular;
                 photoThumbnail.alt = photo.alt_description;
 
+                // Agregar clases para aplicar estilos
+                photoThumbnail.classList.add('img');
+                photoCard.classList.add('foto-card');
+
                 photoWrapper.appendChild(photoThumbnail);
                 photoCard.appendChild(photoWrapper);
                 photoContainer.appendChild(photoCard);
@@ -60,13 +71,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
             artistDetails.appendChild(photoContainer);
 
-            divPrincipal.appendChild(artistDetails);
+            // Añadir artistDetails al contenedor principal
+            mainContainer.appendChild(artistDetails);
+
+            // Añadir el contenedor principal al divPrincipal
+            divPrincipal.appendChild(mainContainer);
         })
         .catch(error => console.error('Error al obtener información del artista:', error));
-});
+}
 
-
-function mostrarImagen(imagen) {
-    // Lógica para mostrar la imagen en detalle
-    console.log('Mostrar imagen en detalle:', imagen);
+function mostrarImagen(photo) {
+    // Lógica para mostrar la imagen en pantalla completa
+    console.log('Mostrar imagen:', photo);
 }
