@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = document.createElement('header');
     header.className = 'header';
 
+
     const h2Artist = document.createElement('h2');
     h2Artist.textContent = ''; // Rellenar con el nombre del artista
 
