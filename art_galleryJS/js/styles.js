@@ -1,5 +1,5 @@
 //Estilos
-document.addEventListener('DOMContentLoaded', function (){
+document.addEventListener('DOMContentLoaded', function() {
     const styles = document.createElement('style');
     styles.innerHTML = `
     @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
@@ -380,8 +380,200 @@ document.addEventListener('DOMContentLoaded', function (){
         color: #1d2120;
       }
       
+   
+      .unsplash-images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+  
+      .artist-card {
+        width: 100%;
+        max-width: 300px;
+      }
+  
+      .foto {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+      }
+  
+      .thumbnail {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s;
+        border: 4px solid black;
+      }
+  
+      .foto:hover .thumbnail {
+        transform: scale(1.1);
+      }
+  
+      .descripcion {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: height 0.5s, bottom 0.5s;
+        height: 0;
+        overflow: hidden;
+      }
+  
+      .foto:hover .descripcion {
+        height: 30%;
+        bottom: 0;
+      }
+  
+      .modal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+      }
+  
+      .modal-content {
+        position: relative;
+        background: white;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+      }
+  
+      .modal img {
+        width: 100%;
+        max-height: 80vh;
+        object-fit: contain;
+      }
+  
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+      }
+     
+.artist-details {
+    max-width: 800px;
+    width: 100%; /* Ajustado para que el contenido ocupe el 100% del ancho disponible */
+    padding: 20px; /* Añadido espacio interno */
+    box-sizing: border-box; /* Ajustado para que el padding no afecte el ancho total */
+}
+
+.header {
+    text-align: center;
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.photo-container {
+    display: flex;
+    flex-wrap: wrap; /* Ajustado para que las fotos se envuelvan cuando no haya espacio suficiente */
+    justify-content: center; /* Alineado al centro horizontalmente */
+}
+
+.photo-card {
+    flex: 0 0 auto;
+    width: 45.33%;
+    margin-bottom: 30px; /* Ajustado para agregar espacio entre las tarjetas de fotos */
+}
+
+.photo-card:last-child {
+    margin-right: 0;
+}
+
+.photo-wrapper {
+    cursor: pointer;
+}
+
+.photo-thumbnail {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.photo-thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-photo {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+p {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.bio-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.bio-container p {
+    font-size: 1.7rem;
+    color: #333;
+    margin: 0;
+}
+      
     `;
-    
 
     document.head.appendChild(styles);
 });

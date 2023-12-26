@@ -186,15 +186,15 @@ const artistaDonato = {
         p: 'Donatello es uno de los escultores más influyentes del Renacimiento italiano y desempeñó un papel fundamental en la evolución de la escultura renacentista.'
     }
 }
-    const artistaGeorge = {
-    linkArtista: 'Georges-Pierre_Seurat.html',
-    linkImagen: './imagenes/Georges_Seurat.jpg',
-    descripcion: {
-        h1: 'Georges-Pierre Seurat',
-        p: 'Georges Seurat es un pintor francés conocido por ser exponente'+
-        'del movimiento artístico conocido como neoimpresionismo, es su obra'+
-        'maestra "Un domingo en la tarde en la isla de la Grande Jatte'
+const artistaGeorge = {
+        linkArtista: 'Georges-Pierre_Seurat.html',
+        linkImagen: './imagenes/Georges_Seurat.jpg',
+        descripcion: {
+            h1: 'Georges-Pierre Seurat',
+            p: 'Georges Seurat es un pintor francés conocido por ser exponente' +
+                'del movimiento artístico conocido como neoimpresionismo, es su obra' +
+                'maestra "Un domingo en la tarde en la isla de la Grande Jatte'
+        }
     }
-}
-//Finaliza divPrincipal
-//Finaliza Main
+    //Finaliza divPrincipal
+    //Finaliza Main
