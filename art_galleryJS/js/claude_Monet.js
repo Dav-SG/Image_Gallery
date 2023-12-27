@@ -75,7 +75,7 @@ function createArtistGallery() {
             mainContainer.appendChild(artistDetails);
 
             // Añadir el contenedor principal al divPrincipal
-            divPrincipal.appendChild(mainContainer);
+            divPrincipales.appendChild(mainContainer);
         })
         .catch(error => console.error('Error al obtener información del artista:', error));
 }

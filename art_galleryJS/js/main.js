@@ -4,16 +4,21 @@
 //Se declara el h1 y el divPrincipal del main
 const h1Main = document.createElement('h1');
 const divPrincipal = document.createElement('div');
+const divPrincipales = document.createElement('div');
 
 //Se asigna la clase "divPrincipal" a la constante
 divPrincipal.className = 'divPrincipal';
 
+//Se asigna la clase "divPrincipales" a la constante para arreglar a Monet
+divPrincipales.className = 'divPrincipales';
+
 //Se asigna el contenido del texto del h1
 h1Main.textContent = 'EXPOSICIÓN GENERAL';
 
-//Se añaden al html los elementos h1Main y divPrincipal
+//Se añaden al html los elementos h1Main, divPrincipal y divPrincipales
 main.appendChild(h1Main);
 main.appendChild(divPrincipal);
+main.appendChild(divPrincipales);
 
 //Contenedor divPrincipal
 //Se crean 9 divs que serán los contenedores de las fotos de la galería

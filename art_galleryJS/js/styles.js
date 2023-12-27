@@ -284,6 +284,28 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
 
+        .divPrincipales{
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .divPrincipales {
+                margin-top: 2rem;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .divPrincipales {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
+            }
+        }
+
         .contenedor {
             padding: 2rem;
             width: min(90%, 120rem);
