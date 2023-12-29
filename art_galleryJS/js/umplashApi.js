@@ -56,6 +56,7 @@
 
      // Agregar el modal al cuerpo del documento
      document.body.appendChild(modal);
+
  }
 
  // Función para navegar entre imágenes en el modal
@@ -125,7 +126,7 @@
          // Agregar evento de clic para cerrar la imagen al hacer clic fuera del modal
          document.addEventListener('click', hideImage);
 
-         divPrincipales.appendChild(mainContainer);
+
      })
      .catch(error => {
          console.error('Error:', error.message);

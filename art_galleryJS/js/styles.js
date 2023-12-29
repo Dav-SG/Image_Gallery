@@ -397,6 +397,16 @@ document.addEventListener('DOMContentLoaded', function() {
             position: relative;
             overflow: hidden;
             cursor: pointer;
+           
+        }
+        @media screen and (max-width: 768px) {
+            .artist-card {
+                max-width: 100%;  /* Permitir que el ancho sea del 100% en pantallas pequeñas */
+            }
+            
+            .descripcion {
+                height: 20%;  /* Ajusta según sea necesario para pantallas pequeñas */
+            }
         }
 
         .thumbnail {
