@@ -124,6 +124,8 @@
 
          // Agregar evento de clic para cerrar la imagen al hacer clic fuera del modal
          document.addEventListener('click', hideImage);
+
+         divPrincipales.appendChild(mainContainer);
      })
      .catch(error => {
          console.error('Error:', error.message);
