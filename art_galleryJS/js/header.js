@@ -106,7 +106,7 @@ link1.href = 'index.html';
 //Se crea un elemento button y se le añade la clase "dropbtn" y el texto del botón se le asgigna "France"
 const btn1 = document.createElement('button');
 btn1.className = 'dropbtn';
-btn1.textContent = 'mas buscados';
+btn1.textContent = 'Mas Buscados';
 //Se le asigna btn1 a link1
 link1.appendChild(btn1);
 
@@ -138,7 +138,7 @@ const link2 = document.createElement('a');
 link2.href = 'index.html';
 const btn2 = document.createElement('button');
 btn2.className = 'dropbtn';
-btn2.textContent = 'Mas populares';
+btn2.textContent = 'Mas Populares';
 link2.appendChild(btn2);
 
 const dropdownContent2 = document.createElement('div');
@@ -159,7 +159,7 @@ const link3 = document.createElement('a');
 link3.href = 'index.html';
 const btn3 = document.createElement('button');
 btn3.className = 'dropbtn';
-btn3.textContent = 'Mas recientes';
+btn3.textContent = 'Mas Recientes';
 link3.appendChild(btn3);
 
 const dropdownContent3 = document.createElement('div');
