@@ -20,19 +20,19 @@ const divWrapper = document.createElement('div');
 const divContainer = document.createElement('div');
 
 //Se añade el div "wrapper" al header
-divWrapper.className ='wrapper';
+divWrapper.className = 'wrapper';
 header.appendChild(divWrapper);
 
 // Crear un elemento de SVG
 const svgPetitLouvre = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-svgPetitLouvre.setAttribute("width","100%");
-svgPetitLouvre.setAttribute("height","100%");
+svgPetitLouvre.setAttribute("width", "100%");
+svgPetitLouvre.setAttribute("height", "100%");
 
 // Crear un elemento de texto en el SVG
 const petitLouvre = document.createElementNS("http://www.w3.org/2000/svg", "text");
-petitLouvre.setAttribute("x","50%");
-petitLouvre.setAttribute("y","50%");
-petitLouvre.setAttribute("dy",".35em");
+petitLouvre.setAttribute("x", "50%");
+petitLouvre.setAttribute("y", "50%");
+petitLouvre.setAttribute("dy", ".35em");
 petitLouvre.setAttribute("text-anchor", "middle");
 petitLouvre.textContent = "LE PETIT LOUVRE";
 
@@ -101,12 +101,12 @@ dropdown4.className = 'dropdown';
 
 //Se declara la constante link1 que crea un elemento anchor de html y tendrá como hipervínculo a France.html
 const link1 = document.createElement('a');
-link1.href = 'index.html';
+link1.href = 'France.html';
 
 //Se crea un elemento button y se le añade la clase "dropbtn" y el texto del botón se le asgigna "France"
 const btn1 = document.createElement('button');
 btn1.className = 'dropbtn';
-btn1.textContent = 'Mas Buscados';
+btn1.textContent = 'Home';
 //Se le asigna btn1 a link1
 link1.appendChild(btn1);
 
@@ -135,10 +135,10 @@ dropdown1.appendChild(dropdownContent1);
 
 //Se repite lo anterior dropdown2, 3 y 4
 const link2 = document.createElement('a');
-link2.href = 'index.html';
+link2.href = 'Italy.html';
 const btn2 = document.createElement('button');
 btn2.className = 'dropbtn';
-btn2.textContent = 'Mas Populares';
+btn2.textContent = 'Artistas';
 link2.appendChild(btn2);
 
 const dropdownContent2 = document.createElement('div');
@@ -159,7 +159,7 @@ const link3 = document.createElement('a');
 link3.href = 'index.html';
 const btn3 = document.createElement('button');
 btn3.className = 'dropbtn';
-btn3.textContent = 'Mas Recientes';
+btn3.textContent = 'Recientes';
 link3.appendChild(btn3);
 
 const dropdownContent3 = document.createElement('div');

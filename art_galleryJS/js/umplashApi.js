@@ -6,7 +6,8 @@
  // Definir la clave de acceso a la API de Unsplash
  const apiKey = 'y6h3aphBHWC_HEc5iFbbcCtLSDuVPyKg8mMCuwSSfnU';
  const perPage = 100; // Mostrar 60 imágenes por página
-
+ const mainContainer = document.createElement('div');
+ mainContainer.className = 'main-container';
  let imagenes = []; // Almacenar las imágenes cargadas
 
  // Función para mostrar la imagen en detalle al hacer clic

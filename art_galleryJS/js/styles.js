@@ -397,7 +397,6 @@ document.addEventListener('DOMContentLoaded', function() {
             position: relative;
             overflow: hidden;
             cursor: pointer;
-            max-width: 20%;
            
         }
         @media screen and (max-width: 768px) {
@@ -521,7 +520,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         .photo-thumbnail {
-            max-width: 100%;
+            max-width: 250px;
             height: auto;
             border-radius: 8px;
             transition: transform 0.3s;
@@ -572,12 +571,7 @@ document.addEventListener('DOMContentLoaded', function() {
             margin-bottom: 20px;
         }
 
-        .bio-container {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
+        
 
         .bio-container p {
             font-size: 1.7rem;
@@ -589,6 +583,45 @@ document.addEventListener('DOMContentLoaded', function() {
             margin: 0 auto; /* Estilo para centrar horizontalmente */
         }
         
+        ---------------
+       
+    body > .js-artists-gallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin-bottom: 100px;
+      }
+  
+      body > .js-artist-card {
+        text-align: center;
+      }
+  
+      body > .js-thumbnail {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.3s;
+        border: 3px solid black;
+      }
+  
+      body > .js-artist-card:hover .js-thumbnail {
+        transform: scale(1.1);
+      }
+  
+      /* Agregar estilos adicionales para las reglas de estilo existentes */
+      @media (min-width: 768px) {
+        body > .js-artists-gallery {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1rem;
+        }
+      }
+  
+      @media (min-width: 992px) {
+        body > .js-artists-gallery {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
     `;
 
     document.head.appendChild(styles);
