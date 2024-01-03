@@ -101,12 +101,12 @@ dropdown4.className = 'dropdown';
 
 //Se declara la constante link1 que crea un elemento anchor de html y tendrá como hipervínculo a France.html
 const link1 = document.createElement('a');
-link1.href = 'France.html';
+link1.href = 'index.html';
 
 //Se crea un elemento button y se le añade la clase "dropbtn" y el texto del botón se le asgigna "France"
 const btn1 = document.createElement('button');
 btn1.className = 'dropbtn';
-btn1.textContent = 'France';
+btn1.textContent = 'mas buscados';
 //Se le asigna btn1 a link1
 link1.appendChild(btn1);
 
@@ -114,7 +114,7 @@ link1.appendChild(btn1);
 const dropdownContent1 = document.createElement('div');
 dropdownContent1.className = 'dropdown-content';
 //Se declara un array que contiene los enlaces a los artistas franceses
-const linksDp1 = ['Claude_Monet.html', 'Georges_Braque.html', 'Georges-Pierre_Seurat.html'];
+const linksDp1 = ['Girl_with.html', 'robert.html', 'citlalli.html'];
 
 /**
  * For que itera el array de enlaces el cual crea elementos anchor le asigna un link del array de enlaces,
@@ -135,15 +135,15 @@ dropdown1.appendChild(dropdownContent1);
 
 //Se repite lo anterior dropdown2, 3 y 4
 const link2 = document.createElement('a');
-link2.href = 'Japan.html';
+link2.href = 'index.html';
 const btn2 = document.createElement('button');
 btn2.className = 'dropbtn';
-btn2.textContent = 'Japan';
+btn2.textContent = 'Mas populares';
 link2.appendChild(btn2);
 
 const dropdownContent2 = document.createElement('div');
 dropdownContent2.className = 'dropdown-content';
-const linksDp2 = ['Hirohiko_Araki.html', 'Katsushika_Hokusai.html', 'Junji_Ito.html'];
+const linksDp2 = ['Lena.html', 'Louis.html', 'Kevin.html'];
 
 linksDp2.forEach(link => {
     const anchor = document.createElement('a');
@@ -156,15 +156,15 @@ dropdown2.appendChild(link2);
 dropdown2.appendChild(dropdownContent2);
 
 const link3 = document.createElement('a');
-link3.href = 'Italy.html';
+link3.href = 'index.html';
 const btn3 = document.createElement('button');
 btn3.className = 'dropbtn';
-btn3.textContent = 'Italy';
+btn3.textContent = 'Mas recientes';
 link3.appendChild(btn3);
 
 const dropdownContent3 = document.createElement('div');
 dropdownContent3.className = 'dropdown-content';
-const linksDp3 = ['Leonardo_da_Vinci.html', 'Michelangelo_Buonarroti.html', 'Donato_di_Niccolo_di_Betto_Bardi.html'];
+const linksDp3 = ['Mark.html', 'Alexandra.html', 'neom.html'];
 
 linksDp3.forEach(link => {
     const anchor = document.createElement('a');
