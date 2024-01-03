@@ -334,7 +334,7 @@ document.addEventListener('DOMContentLoaded', function() {
             background: rgba(12, 164, 191, 0.216);
             padding: 60px 45px;
             position: absolute;
-            top: 60%;
+            top: 80%;
             left: 50%;
             transform: translate(-50%,-50%);
             border-radius: 20px;
@@ -426,7 +426,7 @@ document.addEventListener('DOMContentLoaded', function() {
             bottom: 0;
             left: 0;
             width: 100%;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.1);
             color: white;
             padding: 10px;
             box-sizing: border-box;

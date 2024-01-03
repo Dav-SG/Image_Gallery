@@ -1,15 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Llama a la función para crear la galería del artista
     createArtistGallery();
 });
 
+// Función principal para crear la galería del artista
 function createArtistGallery() {
     // Crear un contenedor principal
     const mainContainer = document.createElement('div');
     mainContainer.className = 'main-container'; // Agregar una nueva clase
 
+    // Crear un contenedor para los detalles del artista
     const artistDetails = document.createElement('div');
     artistDetails.className = 'artist-details';
 
+    // Crear el encabezado con el nombre del artista, la imagen de perfil y la biografía
     const header = document.createElement('header');
     header.className = 'header';
 
@@ -35,9 +39,11 @@ function createArtistGallery() {
 
     artistDetails.appendChild(header);
 
+    // Crear un contenedor para las fotos del artista
     const photoContainer = document.createElement('div');
     photoContainer.className = 'photo-container';
 
+    // Obtener datos del artista desde la API de Unsplash
     fetch('https://api.unsplash.com/users/alexandravutof/?client_id=y6h3aphBHWC_HEc5iFbbcCtLSDuVPyKg8mMCuwSSfnU')
         .then(response => response.json())
         .then(data => {
@@ -53,6 +59,8 @@ function createArtistGallery() {
 
                 const photoWrapper = document.createElement('div');
                 photoWrapper.className = 'photo-wrapper';
+
+                // Agregar evento de clic para mostrar la imagen
                 photoWrapper.addEventListener('click', () => mostrarImagen(photo));
 
                 const photoThumbnail = document.createElement('img');
@@ -75,12 +83,12 @@ function createArtistGallery() {
             mainContainer.appendChild(artistDetails);
 
             // Añadir el contenedor principal al divPrincipal
-            divPrincipales.appendChild(mainContainer);
+            divPrincipal.appendChild(mainContainer);
         })
         .catch(error => console.error('Error al obtener información del artista:', error));
 }
 
+// Función para mostrar la imagen en pantalla completa (actualmente solo imprime en la consola)
 function mostrarImagen(photo) {
-    // Lógica para mostrar la imagen en pantalla completa
     console.log('Mostrar imagen:', photo);
 }

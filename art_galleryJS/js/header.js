@@ -92,12 +92,14 @@ const dropdown1 = document.createElement('div');
 const dropdown2 = document.createElement('div');
 const dropdown3 = document.createElement('div');
 const dropdown4 = document.createElement('div');
+const dropdown5 = document.createElement('div');
 
 //Se leas asigna la clase "dropdown"
 dropdown1.className = 'dropdown';
 dropdown2.className = 'dropdown';
 dropdown3.className = 'dropdown';
 dropdown4.className = 'dropdown';
+dropdown5.className = 'dropdown';
 
 //Se declara la constante link1 que crea un elemento anchor de html y tendrá como hipervínculo a France.html
 const link1 = document.createElement('a');
@@ -175,7 +177,26 @@ linksDp3.forEach(link => {
 
 dropdown3.appendChild(link3);
 dropdown3.appendChild(dropdownContent3);
+const link5 = document.createElement('a');
+link5.href = 'Colaboradores.html';
 
+// Crear un botón y asignar la clase 'dropbtn' y el texto del botón como 'Colaboradores'
+const btn5 = document.createElement('button');
+btn5.className = 'dropbtn';
+btn5.textContent = 'Colaboradores';
+
+// Agregar el botón al elemento anchor
+link5.appendChild(btn5);
+
+// Crear un div con la clase 'dropdown-content'
+const dropdownContent5 = document.createElement('div');
+dropdownContent5.className = 'dropdown-content';
+
+// Se puede dejar el array de enlaces vacío si no hay enlaces específicos para los colaboradores
+
+// Agregar el botón y el contenido del dropdown al div del dropdown
+dropdown5.appendChild(link5);
+dropdown5.appendChild(dropdownContent5);
 const link4 = document.createElement('a');
 link4.href = 'Formulario.html';
 const btn4 = document.createElement('button');
@@ -184,6 +205,8 @@ btn4.textContent = 'Registrate';
 link4.appendChild(btn4);
 
 dropdown4.appendChild(link4);
+// Crear un elemento anchor y establecer el hipervínculo a la página de colaboradores
+
 
 //Se le añaden los elementos imgHeader, dropdown1, 2, 3 y 4 al divContainer
 divContainer.appendChild(imgHeader);
@@ -191,5 +214,6 @@ divContainer.appendChild(dropdown1);
 divContainer.appendChild(dropdown2);
 divContainer.appendChild(dropdown3);
 divContainer.appendChild(dropdown4);
+divContainer.appendChild(dropdown5)
 
 //Finaliza Header
