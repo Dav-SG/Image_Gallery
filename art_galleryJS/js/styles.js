@@ -397,6 +397,7 @@ document.addEventListener('DOMContentLoaded', function() {
             position: relative;
             overflow: hidden;
             cursor: pointer;
+            max-width: 20%;
            
         }
         @media screen and (max-width: 768px) {
