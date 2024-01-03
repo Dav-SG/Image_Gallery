@@ -106,7 +106,7 @@ link1.href = 'France.html';
 //Se crea un elemento button y se le añade la clase "dropbtn" y el texto del botón se le asgigna "France"
 const btn1 = document.createElement('button');
 btn1.className = 'dropbtn';
-btn1.textContent = 'Home';
+btn1.textContent = 'Diversidad';
 //Se le asigna btn1 a link1
 link1.appendChild(btn1);
 
@@ -114,7 +114,7 @@ link1.appendChild(btn1);
 const dropdownContent1 = document.createElement('div');
 dropdownContent1.className = 'dropdown-content';
 //Se declara un array que contiene los enlaces a los artistas franceses
-const linksDp1 = ['Girl_with.html', 'robert.html', 'citlalli.html'];
+const linksDp1 = [];
 
 /**
  * For que itera el array de enlaces el cual crea elementos anchor le asigna un link del array de enlaces,
@@ -164,7 +164,7 @@ link3.appendChild(btn3);
 
 const dropdownContent3 = document.createElement('div');
 dropdownContent3.className = 'dropdown-content';
-const linksDp3 = ['Mark.html', 'Alexandra.html', 'neom.html'];
+const linksDp3 = [];
 
 linksDp3.forEach(link => {
     const anchor = document.createElement('a');
