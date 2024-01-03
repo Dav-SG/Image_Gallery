@@ -507,7 +507,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         .photo-card {
             flex: 0 0 auto;
-            width: 45.33%;
+            width: 35.33%;
             margin-bottom: 30px;
         }
 
